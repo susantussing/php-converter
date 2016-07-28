@@ -31,4 +31,17 @@ class Temperature extends Converter {
   }
 }
 
+class Distance extends Converter {
+  function __construct($amount, $unit) {
+    parent::__construct($amount, $unit);
+    $this->base_unit = "mi";
+    if ($unit == $this->base_unit) {
+      $this->base_amount = $amount;
+    } else if ($unit == "km") {
+      $this->base_amount = $amount * 0.62137119;
+    }
+    $this->conversions["km"] = "amount * 1.609344";
+  }
+}
+
 ?>
