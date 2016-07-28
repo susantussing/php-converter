@@ -44,4 +44,20 @@ class Distance extends Converter {
   }
 }
 
+class Weight extends Converter {
+  function __construct($amount, $unit) {
+    parent::__construct($amount, $unit);
+    $this->base_unit = "lb";
+    if ($unit == $this->base_unit) {
+      $this->base_amount = $amount;
+    } else if ($unit == "st") {
+      $this->base_amount = $amount * 14;
+    } else if ($unit == "kg") {
+      $this->base_amount = $amount * 2.20462;
+    }
+    $this->conversions["st"] = "amount / 14";
+    $this->conversions["kg"] = "amount / 2.20462";
+  }
+}
+
 ?>
