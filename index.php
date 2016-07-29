@@ -9,11 +9,12 @@
   <h2>Temperature</h2>
   <form action="temperature.php">
     <input type="text" name="temp">
-    <select name="unit" id="">
+    <select name="unit">
       <option value="F">F</option>
       <option value="C">C</option>
     </select>
-    <select name="convert" id="">
+    in
+    <select name="convert">
       <option value="F">F</option>
       <option value="C">C</option>
     </select>
@@ -23,11 +24,12 @@
   <h2>Distance</h2>
   <form action="distance.php">
     <input type="text" name="dist">
-    <select name="unit" id="">
+    <select name="unit">
       <option value="km">kilometers</option>
       <option value="mi">miles</option>
     </select>
-    <select name="convert" id="">
+    in
+    <select name="convert">
       <option value="km">kilometers</option>
       <option value="mi">miles</option>
     </select>
@@ -37,12 +39,13 @@
   <h2>Weight</h2>
   <form action="weight.php">
     <input type="text" name="weight">
-    <select name="unit" id="">
+    <select name="unit">
       <option value="lb">pounds</option>
       <option value="st">stone</option>
       <option value="kg">kilograms</option>
     </select>
-    <select name="convert" id="">
+    in
+    <select name="convert">
     <option value="lb">pounds</option>
     <option value="st">stone</option>
     <option value="kg">kilograms</option>
