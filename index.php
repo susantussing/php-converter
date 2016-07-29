@@ -19,5 +19,20 @@
     </select>
     <input type="submit" value="Submit">
   </form>
+
+  <h2>Distance</h2>
+  <form action="distance.php">
+    <input type="text" name="dist">
+    <select name="unit" id="">
+      <option value="km">kilometers</option>
+      <option value="mi">miles</option>
+    </select>
+    <select name="convert" id="">
+      <option value="km">kilometers</option>
+      <option value="mi">miles</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+
 </body>
 </html>
