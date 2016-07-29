@@ -8,6 +8,7 @@ class Converter {
   }
 
   function convert($unit) {
+    $unit = strtolower($unit);
     if ($unit == $this->base_unit) {
       return $this->base_amount;
     } else {
@@ -20,6 +21,7 @@ class Converter {
 
 class Temperature extends Converter {
   function __construct($amount, $unit) {
+    $unit = strtolower($unit);
     parent::__construct($amount, $unit);
     $this->base_unit = "f";
     if ($unit == $this->base_unit) {
