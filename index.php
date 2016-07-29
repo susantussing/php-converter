@@ -34,5 +34,20 @@
     <input type="submit" value="Submit">
   </form>
 
+  <h2>Weight</h2>
+  <form action="weight.php">
+    <input type="text" name="weight">
+    <select name="unit" id="">
+      <option value="lb">pounds</option>
+      <option value="st">stone</option>
+      <option value="kg">kilograms</option>
+    </select>
+    <select name="convert" id="">
+    <option value="lb">pounds</option>
+    <option value="st">stone</option>
+    <option value="kg">kilograms</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
 </body>
 </html>
